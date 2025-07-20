@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merwin's Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                  url('https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f1f1f1;
+    }
+
+    header {
+      background-color: rgb(3, 55, 134);
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f1c40f;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 16px;
+      color: #f1f1f1;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    a {
+      color: #87cefa;
+      word-break: break-word;
+    }
+
+    footer {
+      background-color: rgba(30, 60, 114, 0.85);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Merwin Richards M</h1>
+    <p>3rd Year B.Tech IT Student | Aspiring Software Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Merwin Richards, a passionate IT student in my third year at Loyola-Icam College Of Engineering.
+      I enjoy learning new technologies and building meaningful projects. I'm working towards
+      becoming a full-stack developer and contributing to impactful software solutions.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">HTML & CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Python</div>
+      <div class="card">C/C++</div>
+      <div class="card">SQL</div>
+      <div class="card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>College Chatbot</h3>
+        <p>The College Chatbot is a virtual assistant developed using Flask and NLTK to answer common college-related queries. It allows students to quickly access information about courses, deadlines, and events through a simple web interface. Trained on over 50 frequently asked questions, it enhances student support by reducing the need for manual responses.</p>
+        <p>Code: <a href="https://github.com/Merwinrichards/College_chatbot" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
+      </div>
+      <div class="card">
+        <h3>Water Quality Prediction</h3>
+        <p>A machine learning model that predicts whether water is safe to drink based on features like pH, hardness, solids, and sulfate. Trained using algorithms like Random Forest to achieve accurate classification of potable water.</p>
+        <p>Code: <a href="https://github.com/Merwinrichards/Water-Quality-Prediction" target="_blank" rel="noopener noreferrer">GitHub Link</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Bluestock Fintech</h3>
+        <p>Completed a two-month internship as a Software Development Engineer (SDE), where I worked on development tasks in a fintech environment and gained hands-on experience in coding and problem-solving.</p>
+      </div>
+      <div class="card">
+        <h3>SOFTTWIG Technology Solutions</h3>
+        <p>Completed a one-month internship in software development, with training in SDLC, Agile, and DevOps. Contributed to internal development and testing activities during the internship.</p>
+      </div>
+      <div class="card">
+        <h3>BSNL Telecom</h3>
+        <p>Completed implant training at RGM TTC in August 2024, where I gained practical exposure to telecommunication systems, wireless communication, and network technologies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: merwinrichards.27it@licet.ac.in</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/merwin" target="_blank" rel="noopener noreferrer">linkedin.com/in/merwin</a></p>
+    <p>GitHub: <a href="https://github.com/merwinrichards" target="_blank" rel="noopener noreferrer">github.com/merwinrichards</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Merwin Richards. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
